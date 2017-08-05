@@ -15,9 +15,6 @@ ext {
     retrofitVersion = '2.3.0'
     butterknifeVersion = '8.8.0'
     glideVersion = '4.0.0'
-//    compile 'com.github.bumptech.glide:glide:4.0.0'
-//    compile 'com.android.support:support-v4:25.3.1'
-//    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
 
     presentationDependencies = [
             rxJava             : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
