@@ -1,0 +1,9 @@
+com\blueberry\star\entity\RestResponse.class
+com\blueberry\star\Application.class
+com\blueberry\star\controller\StarController.class
+com\blueberry\star\data\StarData.class
+com\blueberry\star\service\StarService.class
+com\blueberry\star\entity\Star.class
+com\blueberry\star\service\StarServiceImpl.class
+com\blueberry\star\repository\StarRepositoryImpl.class
+com\blueberry\star\repository\StarRepository.class

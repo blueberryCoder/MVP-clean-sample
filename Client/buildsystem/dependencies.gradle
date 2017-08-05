@@ -1,0 +1,52 @@
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+ext {
+    // Libraries
+    rxJavaVersion = '2.0.2'
+    rxAndroidVersion = '2.0.1'
+    appcompatVersion = '25.3.1'
+    daggerVersion = '2.11'
+    javaxInjectVersion = '1'
+    retrofitVersion = '2.3.0'
+    butterknifeVersion = '8.8.0'
+    glideVersion = '4.0.0'
+//    compile 'com.github.bumptech.glide:glide:4.0.0'
+//    compile 'com.android.support:support-v4:25.3.1'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
+
+    presentationDependencies = [
+            rxJava             : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            rxAndroid          : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            appcompat          : "com.android.support:appcompat-v7:${appcompatVersion}",
+            design             : "com.andoid.support:design:${appcompatVersion}",
+            dagger             : "com.google.dagger:dagger:${daggerVersion}",
+            daggerCompiler     : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            recyclerview       : "com.android.support:recyclerview-v7:${appcompatVersion}",
+            butterknife        : "com.jakewharton:butterknife:${butterknifeVersion}",
+            butterknifeCompiler: "com.jakewharton:butterknife-compiler:${butterknifeVersion}",
+            glide              : "com.github.bumptech.glide:glide:${glideVersion}",
+            glideCompiler      : "com.github.bumptech.glide:compiler:${glideVersion}"
+    ]
+
+    presentationTestDependencies = [
+
+    ]
+
+    domainDependencies = [
+            rxJava     : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            javaxInject: "javax.inject:javax.inject:${javaxInjectVersion}"
+    ]
+
+    dataDependencies = [
+            rxJava                 : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            javaxInject            : "javax.inject:javax.inject:${javaxInjectVersion}",
+            retrofit               : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitGsonConverter  : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitRxJavaConverter: "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    ]
+}

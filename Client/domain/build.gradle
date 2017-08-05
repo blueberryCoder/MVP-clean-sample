@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+dependencies {
+    def  domainDependencies = rootProject.ext.domainDependencies
+
+    compile domainDependencies.rxJava
+    compile domainDependencies.javaxInject
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
